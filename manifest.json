@@ -1,13 +1,13 @@
 {
-  "name": "New York Times Homepage Bylines",
-  "version": "1.01",
+  "name": "New York Times Bylines",
+  "version": "0.01",
   "description": "Adds journalist bylines to articles on the New York Times homepage.",
   "manifest_version": 2,
   "content_scripts": [
    {
      "matches": ["https://*.nytimes.com/*"],
-     "js":["jquery-3.3.1.min.js", "rss.js"],
-     "css": ["style.css"],
+     "js":["js/jquery-3.3.1.min.js", "js/rss.js"],
+     "css": ["css/style.css"],
      "run_at": "document_end"
    }
  ]
