@@ -11,8 +11,8 @@ $.ajax(feed, {
 			if (url.indexOf("opinion") != -1) { 
 				// skip because opinion articles contain bylines
 			} else {
-				// url = url.split('?')[0];
-				url = url.match(/https:\/\/[^\/]+([^\?]+)/)[1];
+				url = url.split('?')[0];
+				// url = url.match(/https:\/\/[^\/]+([^\?]+)/)[1];
 				var author_string = el.find('dc\\:creator').text().toLowerCase();
 
 				var split_string = author_string.toLowerCase().split(' ');
